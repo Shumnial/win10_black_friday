@@ -1,0 +1,65 @@
+.ms_laptops {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 70px;
+
+  &__headings {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  &__note {
+    .fz(18, 24);
+    color: #545150;
+    padding: 35px 20px;
+    border: 1px solid #DCDCDC;
+    margin-bottom: 55px;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: 30%;
+    margin-bottom: 40px;
+  }
+
+  &__center {
+    text-align: center;
+  }
+
+  @media (max-width: @screen-sm-max) {
+    &__row {
+      justify-content: space-around;
+    }
+
+    &__item {
+      width: 42%;
+    }
+
+    &__note {
+      .fz(16, 22);
+    }
+  }
+
+  @media (max-width: 530px) {
+    &__item {
+      width: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .ms_btn {
+      span {
+        display: none;
+      }
+    }
+  }
+}

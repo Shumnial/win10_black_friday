@@ -1,0 +1,112 @@
+.ms_office {
+  background-color: @gray-200;
+  overflow: hidden;
+
+  .ms_btn {
+    display: block;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .ms_text {
+    margin-bottom: 1.6em;
+  }
+
+  &__headings {
+    position: relative;
+    max-width: 850px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    z-index: 1;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__stage {
+    position: relative;
+    width: 20%;
+    height: 350px;
+    margin-right: 10%;
+
+    img {
+      position: absolute;
+      max-width: none;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  &__content {
+    max-width: 490px;
+    width: 100%;
+  }
+
+  &__feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-icon {
+      text-align: center;
+      width: 96px;
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+
+    &-text {
+      .fz(18, 24);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    &__feature {
+      &-text {
+        .fz(16, 22);
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    &__stage {
+      height: 375px;
+      margin-right: 5%;
+      img {
+        max-width: 600px;
+      }
+    }
+
+    &__feature {
+      &-text {
+        .fz(14, 20);
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    &__stage {
+      display: none;
+    }
+
+    &__content {
+      max-width: 400px;
+    }
+
+    &__inner {
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+  }
+}

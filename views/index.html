@@ -1,0 +1,157 @@
+{% extends layout %}
+{% block head_section %}
+{#-
+	Include something in <head />
+-#}
+{% endblock head_section %}
+
+{% block content %}
+<section class="ms_hero">
+  <div class="ms_hero__head ms_container">
+    <img src="{{ 'logo.svg'|resolveImage }}" alt="" class="ms_hero__logo">
+  </div>
+  <div class="ms_hero__inner ms_container">
+    <div class="ms_hero__content">
+      <h1 class="ms_hero__title">Ноутбук с&nbsp;предустановленной Windows 10&nbsp;&mdash; работает прямо из&nbsp;коробки</h1>
+      <!-- <a data-fancybox href="#" class="ms_hero__btn">
+        <div class="ms_hero__btn-icon">
+          {{ Icon.render('i-play') }}
+        </div>
+        <p class="ms_hero__btn-text">
+          Смотреть проморолик
+        </p>
+      </a> -->
+    </div>
+  </div>
+</section>
+
+<section class="ms_advantages">
+	<div class="ms_container">
+		<div class="ms_advantages__inner">
+			<div class="ms_advantages__stage">
+        <div class="ms_advantages__stage-icon">{{ Icon.render('i-hand') }}</div>
+        <h2 class="ms_advantages__stage-title">
+          Распакуйте ноутбук, чтобы&nbsp;узнать все&nbsp;преимущества предустановленной Windows&nbsp;10
+        </h2>
+				<div class="ms_advantages__stage-imgs">
+					<img src="{{ 'advantages-box.png'|resolveImage }}" alt="" class="ms_advantages__stage-img">
+					<img src="{{ 'advantages-box-2.png'|resolveImage }}" alt="" class="ms_advantages__stage-img">
+				</div>
+			</div>
+			<div class="ms_advantages__content">
+        <div class="ms_advantages__tabs">
+          {% for item in index.advantages %}
+            <img src="{{ item.img|resolveImage }}" alt="" class="ms_advantages__tab {% if loop.index === 1 %}active{% endif %}">
+          {% endfor %}
+        </div>
+				<div class="ms_advantages__list">
+					{% for item in index.advantages %}
+						<div class="ms_advantages__item">
+							<h3 class="ms_advantages__item-title">{{ item.title }}</h3>
+							<p class="ms_advantages__item-text">{{ item.text }}</p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="ms_laptops ms_section">
+  <div class="ms_container">
+    <div class="ms_laptops__headings">
+      <p class="ms_laptops__note">Поддержка Windows 7&nbsp;закончилась 14&nbsp;января 2020.<br>Только
+        ноутбуки с&nbsp;Windows 10&nbsp;гарантируют все преимущества предустановленного&nbsp;ПО.</p>
+      <h2 class="ms_title">Выберите свой ноутбук<br>с&nbsp;предустановленной Windows&nbsp;10</h2>
+    </div>
+    <div class="ms_laptops__row">
+      {% for item in index.goods %}
+      <div class="ms_laptop-card ms_laptops__item">
+        <img src="{{ item.img|resolveImage }}" alt="">
+        <div class="ms_laptop-card__content">
+          <h3 class="ms_laptop-card__title">{{ item.title }}</h3>
+          <div class="ms_laptop-card__specs">
+            {% for spec in item.specs %}
+            <p class="ms_laptop-card__spec">{{ spec }}</p>
+            {% endfor %}
+          </div>
+          <p class="ms_laptop-card__price">{{ item.price }} руб.</p>
+          <a target="_blank" class="ms_external-link" href="{{ item.href }}">Купить сейчас</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="ms_laptops__center">
+      {{ Btn.render("Больше ноутбуков с&nbsp;Windows&nbsp;10", "https://www.eldorado.ru/c/noutbuki/f/windows-10/") }}
+    </div>
+  </div>
+</section>
+
+<section class="ms_office ms_section">
+  <div class="ms_container">
+    <div class="ms_office__headings">
+      <h2 class="ms_title">Работайте из&nbsp;дома с&nbsp;Microsoft Office</h2>
+      <h3 class="ms_text ms_text--lg">Microsoft Office 2019&nbsp;&mdash; все&nbsp;необходимые инструменты
+        для&nbsp;работы с&nbsp;документами, реализации творческих идей, выполнения учебных и&nbsp;домашних проектов.
+      </h3>
+      {# <h3 class="ms_text ms_text--md ms_text--accent">Microsoft Office Home and Student<br>за&nbsp;2990&nbsp;руб. вместо
+        &nbsp;<span class="ms_text ms_text--crossed">5990&nbsp;руб.</span>&nbsp; при&nbsp;покупке с&nbsp;Windows&nbsp;ПК
+      </h3> #}
+    </div>
+    <div class="ms_office__inner">
+      <div class="ms_office__stage">
+        <img src="{{ 'office-stage.png'|resolveImage }}" alt="">
+      </div>
+      <div class="ms_office__content">
+        <div class="ms_office__features">
+          {% for item in index.officeFeatures %}
+          <div class="ms_office__feature">
+            <div class="ms_office__feature-icon">
+              <img src="{{ item.icon|resolveImage }}" class="ms_office__feature-img">
+            </div>
+            <p class="ms_office__feature-text">{{ item.text }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div>
+      {{ Btn.render("Купить сейчас", "https://www.eldorado.ru/cat/detail/programmnoe-obespechenie-microsoft-office-dlya-doma-i-uchyeby-2019/") }}
+    </div>
+  </div>
+</section>
+
+<div class="ms_gamepass">
+  <div class="ms_container">
+    <div class="ms_gamepass__inner">
+      <div class="ms_gamepass__headings">
+        <h3 class="ms_gamepass__title ms_title">Xbox Game Pass<br>для&nbsp;ПК с&nbsp;Windows&nbsp;10</h3>
+        <p class="ms_gamepass__text">Xbox Game Pass для&nbsp;ПК&nbsp;&mdash; это сервис, дающий неограниченный доступ к&nbsp;библиотеке из&nbsp;более чем 100 высококачественных компьютерных игр для устройств с&nbsp;Windows&nbsp;10. Новые игры добавляются на&nbsp;постоянной основе, поэтому у&nbsp;вас всегда будет во&nbsp;что поиграть.</p>
+      </div>
+      <img class="ms_gamepass__img" src="{{ 'gamepass-bg.jpg'|resolveImage }}" alt="">
+      {{ Btn.render("Купить сейчас", "https://www.eldorado.ru/cat/detail/podpiska-microsoft-game-pass-pc-3-mesyatsa-xbox/", 'ms_gamepass__btn') }}
+    </div>
+  </div>
+</div>
+
+<div class="ms_accessory ms_section">
+  <div class="ms_container">
+    <div class="ms_accessory__inner">
+      <div class="ms_accessory__content">
+        <h2 class="ms_title">Дополните ноутбук стильной мышью</h2>
+        <p class="ms_text ms_text--lg">Microsoft Wireless Mobile Mouse®</p>
+        {{ Btn.render("Купить сейчас", "https://www.eldorado.ru/cat/detail/mysh-microsoft-mobile-1850-wool-blue/") }}
+      </div>
+      <div class="ms_accessory__stage">
+        <img src="{{ 'accessory-stage.jpg'|resolveImage }}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block footer_section %}
+{#-
+		Include something before /body
+	-#}
+{% endblock footer_section %}

@@ -1,0 +1,35 @@
+.ms_text {
+  .fz(20, 26);
+
+  &--md {
+    font-weight: 500;
+  }
+
+  &--accent {
+    color: @orange;
+  }
+
+  &--blue {
+    color: @blue;
+  }
+
+  &--crossed {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -5%;
+      right: -5%;
+      margin: auto;
+      height: 2px;
+      background-color: #000;
+    }
+  }
+
+  @media (max-width: @screen-xs) {
+    .fz(16, 24);
+  }
+}

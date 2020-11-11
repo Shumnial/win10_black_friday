@@ -1,0 +1,199 @@
+{
+  "advantages": [
+		{
+			"title": "Достали из&nbsp;коробки&nbsp;&mdash; и&nbsp;за&nbsp;дело!",
+      "text": "Между распаковкой ноутбука и&nbsp;запуском необходимого приложения пройдёт всего несколько секунд. А&nbsp;всё потому, что с&nbsp;предустановленной Windows 10&nbsp;в режиме&nbsp;S устройство запускается практически моментально. К&nbsp;тому&nbsp;же все программы для Windows&nbsp;10, доступные вам в&nbsp;Microsoft Store, проверены специалистами Microsoft, что гарантирует быструю и&nbsp;надежную работу приложений на&nbsp;вашем устройстве.",
+      "img": "advantages-tab1.png"
+		},
+		{
+			"title": "Выгоднее в&nbsp;одной коробке ",
+      "text": "Если ноутбук, который вы&nbsp;только что достали из&nbsp;коробки, идёт с&nbsp;предустановленной Windows 10&nbsp;&mdash; поздравляем, вы&nbsp;не&nbsp;прогадали. Во-первых, вы&nbsp;сэкономили: покупка устройства с&nbsp;предустановленной Windows 10&nbsp;всегда дешевле, чем покупать их&nbsp;по&nbsp;отдельности. А, во-вторых, предустановленная&nbsp;ОС избавляет вас от&nbsp;необходимости тратить время, силы и&nbsp;средства на&nbsp;установку и&nbsp;настройку системы.",
+      "img": "advantages-tab2.png"
+		},
+		{
+			"title": "Коробка без &laquo;сюрпризов&raquo;",
+      "text": "Вы&nbsp;купили ноутбук с&nbsp;предустановленной на&nbsp;заводе Windows&nbsp;10, прошедший тестирование и&nbsp;настройку специалистами, и&nbsp;поэтому компоненты устройства будут стабильно работать из&nbsp;года в&nbsp;год. Вы&nbsp;можете быть уверены, что ноутбук не&nbsp;будет тормозить из-за несовместимых или устаревших драйверов или спрятанных &laquo;зловредов&raquo; и&nbsp;шпионских программ. Плюс, что&nbsp;бы ни&nbsp;случилось, вы&nbsp;можете рассчитывать на&nbsp;квалифицированную техническую поддержку.",
+      "img": "advantages-tab3.png"
+		},
+		{
+			"title": "Ноутбук с&nbsp;Windows 10&nbsp;&mdash; защищён из&nbsp;коробки",
+      "text": "Ваш новый ноутбук с&nbsp;предустановленной Windows 10&nbsp;готов отражать вредоносные программы ещё до&nbsp;того, как вы&nbsp;впервые его включили. К&nbsp;тому&nbsp;же, вы&nbsp;точно знаете, что в&nbsp;операционной системе не&nbsp;спрятаны вирусы и&nbsp;шифровальщики, которые часто сопровождают программное обеспечение, полученное из&nbsp;ненадежных источников. Дополнительно, лицензионная Windows 10&nbsp;получает своевременные обновления безопасности, чтобы ни&nbsp;один вирус не&nbsp;испортил настроение.",
+      "img": "advantages-tab4.png"
+		}
+	],
+  "params": [
+    {
+      "icon": "icon-params1.png",
+      "title": "Предустановленное ПО&nbsp;надежнее",
+      "text": "Убедитесь, что вы&nbsp;сможете начать пользоваться новым ноутбуком сразу после покупки. Предустановленная на&nbsp;заводе Windows 10&nbsp;&mdash; залог стабильной работы всех компонентов ноутбука, благодаря тестированию и&nbsp;настройке, произведенной специалистами."
+    },
+    {
+      "icon": "icon-params2.png",
+      "title": "Предустановленное ПО&nbsp;безопаснее",
+      "text": "Покупая ноутбук с&nbsp;предустановленной лицензионной Windows&nbsp;10, вы&nbsp;можете быть уверены, что не&nbsp;получаете &laquo;в&nbsp;подарок&raquo; спрятанные вредоносные программы, такие как вирусы, шифровальщики или нелегальные майнеры криптовалюты, которые сопровождают программное обеспечение, полученое из&nbsp;ненадежных источников."
+    },
+    {
+      "icon": "icon-params3.png",
+      "title": "Предустановленное ПО&nbsp;выгоднее",
+      "text": "Покупка компьютера с&nbsp;предустановленной Windows 10&nbsp;обеспечивает существенную экономию по&nbsp;сравнению с&nbsp;покупкой коробочной версии Windows. Windows в&nbsp;комплекте с&nbsp;ПК всегда дешевле. К&nbsp;тому&nbsp;же вам не&nbsp;придется тратить время, силы и&nbsp;средства на&nbsp;установку и&nbsp;настройку&nbsp;ОС, приобретенную отдельно."
+    },
+    {
+      "icon": "icon-params4.png",
+      "title": "С&nbsp;предустановленным&nbsp;ПО проще",
+      "text": "Инженеры Microsoft непрерывно работают над совершенствованием и&nbsp;развитием операционной системы. Предустановленная Windows 10&nbsp;получает регулярные обновления безопасности и&nbsp;функций. Также вы&nbsp;можете рассчитывать на&nbsp;квалифицированную техническую поддержку в&nbsp;случае возникновения вопросов и&nbsp;затруднений."
+    },
+    {
+      "icon": "icon-params5.png",
+      "title": "Производительнее с&nbsp;Windows&nbsp;10 в&nbsp;режиме&nbsp;S",
+      "text": "Предустановленная Windows 10&nbsp;в режиме&nbsp;S настроена таким образом, что запуск компьютера происходит практически моментально. Все программы, доступные вам в&nbsp;Microsoft Store, проверены специалистами Microsoft. Это гарантирует быструю и&nbsp;надежную работу приложений, а&nbsp;также защищает вас от&nbsp;зловредного ПО. При желании вы&nbsp;в&nbsp;любой момент можете бесплатно переключиться в&nbsp;обычный режим Windows&nbsp;10."
+    }
+  ],
+  "goods": [
+    {
+      "title": "Acer Swift SF314-58-527K NX.HPMER.008",
+      "img": "goods1.jpg",
+      "specs": [
+        "Процессор: Intel Core i5",
+        "Память: 8 ГБ",
+        "Накопитель: 256 ГБ"
+      ],
+      "price": "54 990",
+      "href": "https://www.eldorado.ru/cat/detail/ultrabuk-acer-swift-3-sf314-58-527k-nx-hpmer-008/"
+    },
+    {
+      "title": "Acer Aspire A315-56-33BN NX.HS5ER.01E",
+      "img": "goods2.jpg",
+      "specs": [
+        "Процессор: Intel Core i3",
+        "Память: 8 ГБ",
+        "Накопитель: 256 ГБ"
+      ],
+      "price": "39 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-acer-aspire-3-a315-56-33bn-nx-hs5er-01e/"
+    },
+    {
+      "title": "Asus E203MA-FD001T",
+      "img": "goods3.jpg",
+      "specs": [
+        "Процессор: Intel Celeron",
+        "Память: 4 ГБ",
+        "Накопитель: 32 ГБ"
+      ],
+      "price": "16 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-asus-e203ma-fd001t/"
+    },
+    {
+      "title": "Asus R540UB-DM1767T",
+      "img": "goods4.jpg",
+      "specs": [
+        "Процессор: Intel Core i5",
+        "Память: 6 ГБ",
+        "Накопитель: 256 ГБ"
+      ],
+      "price": "46 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-asus-r540ub-dm1767t/"
+    },
+    {
+      "title": "HP 15-dw2089ur 201N7EA",
+      "img": "goods5.jpg",
+      "specs": [
+        "Процессор: Intel Core i3",
+        "Память: 8 ГБ",
+        "Накопитель: 512 ГБ"
+      ],
+      "price": "51 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-hp-15-dw2089ur-201n7ea/"
+    },
+    {
+      "title": "HP Pavilion x360 14-dh0015ur 7DR28EA",
+      "img": "goods6.jpg",
+      "specs": [
+        "Процессор: Intel Pentium Gold",
+        "Память: 4 ГБ",
+        "Накопитель: 128 ГБ"
+      ],
+      "price": "41 990",
+      "href": "https://www.eldorado.ru/cat/detail/nb-hp-pavilion-x360-14-dh0015ur-7dr28ea/"
+    },
+    {
+      "title": "Honor Magicbook Boh-WAQ9HNR 256GB SG",
+      "img": "goods7.jpg",
+      "specs": [
+        "Процессор: AMD Ryzen 5",
+        "Память: 8 ГБ",
+        "Накопитель: 256 ГБ"
+      ],
+      "price": "49 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-honor-magicbook-15-256gb-space-gray-boh-waq9hnr/"
+    },
+    {
+      "title": "Huawei Matebook HN-W19R Sp/Gr",
+      "img": "goods8.jpg",
+      "specs": [
+        "Процессор: AMD Ryzen 5",
+        "Память: 16 ГБ",
+        "Накопитель: 512 ГБ"
+      ],
+      "price": "59 990",
+      "href": "https://www.eldorado.ru/cat/detail/ultrabuk-huawei-matebook-13-space-grey-hn-w19r/"
+    },
+    {
+      "title": "Lenovo IdeaPad S145-15IKB/81VD00DBRU",
+      "img": "goods9.jpg",
+      "specs": [
+        "Процессор: Intel Core i3",
+        "Память: 8 ГБ",
+        "Накопитель: 512 ГБ"
+      ],
+      "price": "43 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-lenovo-ideapad-s145-15ikb-81vd00dbru/"
+    },
+    {
+      "title": "Lenovo IdeaPad S145-15IKB/81VD00DFRU",
+      "img": "goods10.jpg",
+      "specs": [
+        "Процессор: Intel Core i3",
+        "Память: 8 ГБ",
+        "Накопитель: 512 ГБ"
+      ],
+      "price": "47 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-lenovo-ideapad-s145-15ikb-81vd00dfru/"
+    },
+    {
+      "title": "Lenovo IdeaPad 3 14ARE05/81W30083RU",
+      "img": "goods11.jpg",
+      "specs": [
+        "Процессор: AMD Ryzen 3",
+        "Память: 4 ГБ",
+        "Накопитель: 128 ГБ"
+      ],
+      "price": "39 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-lenovo-ideapad-3-14are05-81w30083ru/"
+    },
+    {
+      "title": "Irbis NB600",
+      "img": "goods12.jpg",
+      "specs": [
+        "Процессор: Intel Celeron",
+        "Память: 3 ГБ",
+        "Накопитель: 32 ГБ"
+      ],
+      "price": "14 990",
+      "href": "https://www.eldorado.ru/cat/detail/noutbuk-irbis-nb600/"
+    }
+  ],
+  "officeFeatures": [
+    {
+      "icon": "office-feature1.png",
+      "text": "Бессрочная лицензия"
+    },
+    {
+      "icon": "office-feature2.png",
+      "text": "Любимые и&nbsp;знакомые приложения"
+    },
+    {
+      "icon": "office-feature3.png",
+      "text": "1&nbsp;пользователь&nbsp;&mdash; 1&nbsp;ПК/Мас"
+    }
+  ]
+}

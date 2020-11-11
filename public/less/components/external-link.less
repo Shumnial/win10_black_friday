@@ -1,0 +1,32 @@
+.ms_external-link {
+  position: relative;
+  .fz(15);
+  font-weight: 600;
+  color: @gray-500;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 25px;
+  transition: color 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(45deg);
+  }
+
+  &:hover {
+    color: @blue;
+  }
+
+  @media (max-width: @screen-xs) {
+    .fz(13);
+  }
+}

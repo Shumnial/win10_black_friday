@@ -1,0 +1,65 @@
+.ms_accessory {
+  overflow: hidden;
+
+  .ms_title {
+    text-align: left;
+    margin: 0 auto 30px;
+  }
+
+  .ms_text {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: flex;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    position: relative;
+    max-width: 380px;
+    width: 100%;
+    flex-shrink: 0;
+    margin-right: -190px;
+    z-index: 1;
+  }
+
+  &__stage {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+
+    img {
+      max-width: none;
+      pointer-events: none;
+      user-select: none;
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    &__inner {
+      display: block;
+      text-align: center;
+    }
+
+    .ms_title {
+      text-align: center;
+    }
+
+    &__content {
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
+
+    &__stage {
+      max-width: 350px;
+      width: 100%;
+      margin: 0 auto;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

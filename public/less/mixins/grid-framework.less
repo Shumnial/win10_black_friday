@@ -1,0 +1,114 @@
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `@grid-columns`.
+
+.make-grid-columns() {
+  // Common styles for all sizes of grid columns, widths 1-12
+  .col(@index) { // initial
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+    .col((@index + 1), @item);
+  }
+  .col(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index > @grid-columns) { // terminal
+    @{list} {
+      box-sizing: border-box;
+      flex: 0 0 auto;
+      padding-right: @half-gutter-width;
+      padding-left: @half-gutter-width;
+    }
+  }
+  .col(1); // kickstart it
+}
+.grid-utilites(@class) {
+  .flex-start-@{class} {
+    justify-content: flex-start;
+    text-align: start;
+  }
+
+  .flex-center-@{class} {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .flex-end-@{class} {
+    justify-content: flex-end;
+    text-align: end;
+  }
+
+  .flex-top-@{class} {
+    align-items: flex-start;
+  }
+
+  .flex-middle-@{class} {
+    align-items: center;
+  }
+
+  .flex-bottom-@{class} {
+    align-items: flex-end;
+  }
+
+  .flex-around-@{class} {
+    justify-content: space-around;
+  }
+
+  .flex-between-@{class} {
+    justify-content: space-between;
+  }
+
+  .flex-first-@{class} {
+    order: -1;
+  }
+
+  .flex-last-@{class} {
+    order: 1;
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = width) and (@index > 0) {
+  .col-@{class}-@{index} {
+    flex-basis: percentage((@index / @grid-columns));
+    max-width: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = push) and (@index > 0) {
+  .col-@{class}-push-@{index} {
+    left: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = push) and (@index = 0) {
+  .col-@{class}-push-0 {
+    left: auto;
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = pull) and (@index > 0) {
+  .col-@{class}-pull-@{index} {
+    right: percentage((@index / @grid-columns));
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = pull) and (@index = 0) {
+  .col-@{class}-pull-0 {
+    right: auto;
+  }
+}
+.calc-grid-column(@index, @class, @type) when (@type = offset) {
+  .col-@{class}-offset-@{index} {
+    margin-left: percentage((@index / @grid-columns));
+  }
+}
+
+// Basic looping in LESS
+.loop-grid-columns(@index, @class, @type) when (@index >= 0) {
+  .calc-grid-column(@index, @class, @type);
+  // next iteration
+  .loop-grid-columns((@index - 1), @class, @type);
+}
+
+// Create grid for specific class
+.make-grid(@class) {
+  .loop-grid-columns(@grid-columns, @class, width);
+  .loop-grid-columns(@grid-columns, @class, offset);
+  .grid-utilites(@class);
+}
